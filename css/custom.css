@@ -1,0 +1,275 @@
+/* ==============================================================
+    CUSTOM CSS
+==============================================================   */
+.bgcolor-major-gradient-overlay
+{
+    background-image: -moz-linear-gradient( 135deg, rgb(4, 3, 58) 0%, rgba(101, 162, 185, 0) 100%);
+    background-image: -webkit-linear-gradient( 135deg, rgb(4, 3, 58) 0%, rgba(101, 162, 185, 0) 100%);
+    background-image: -ms-linear-gradient( 135deg, rgb(4, 3, 58) 0%, rgba(101, 162, 185, 0) 100%);
+}
+.bgfull {
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+.bg-img1 {
+    background-image: url(../img/testimonial-bg.jpg);
+    z-index: -1;
+}
+.welcome-text > a:hover i, .single-price > a:hover i, .single-post .post-details > a:hover i, .purchase-text a:hover i, .btn:hover i{
+    transform: translateX(10px);
+}
+.welcome-text {
+    font-size: 18px;
+    font-weight: 300;
+    color: #0d202f;
+}
+.welcome-text h1 {
+    background: #22313f;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #fff;
+    padding-left: 25px;
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.welcome-text h1 span {
+    background-color: #ef4836;
+    display: inline-block;
+    padding: 25px;
+    margin-left: 25px;
+}
+.welcome-text > a {
+    background-color: #ef4836;
+    display: inline-block;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 30px;
+}
+.welcome-text > a i {
+    margin-left: 12px;
+}
+.welcome-text > a:hover {
+    background-color: #e04130;
+}
+.displayTable
+{
+	background: rgba(0,0,0,0.7);
+	z-index: 1;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align:center;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+
+}
+
+.sidenav a:hover{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.btn.btn-primary:hover,
+ .btn.btn-primary:focus,
+  .btn.btn-info:hover, 
+  .btn.btn-info:focus,
+   .btn.btn-border:hover, 
+   .btn.btn-border:focus, 
+   .bgcolor-major, 
+   .btn.btn-primary, 
+   .featured-price, 
+   .item-filter.item-filter-v2>li:hover:before,
+    .item-filter.item-filter-v2>li.active:before, 
+    .partners-slider .owl-controls .owl-nav>div,
+     .team-slider-v2 .owl-controls .owl-nav>div:hover, 
+     .contact-details, .team-social li>a:hover,
+      .featured-posts-slider .customnav>span:hover, 
+      ul.author-social li a:hover, 
+      ul.author-social li a:focus, 
+      ul.author-social li a:active, 
+      .viewbox .panel, .error-page,
+       .pace .pace-progress{
+
+        background-color: #100b3a;
+       }
+.bgcolor-img{
+    background: url(../img/testimonial-bg.jpg)no-repeat center center fixed;
+    width: 100%;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+
+}
+.color-overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+.offcanvas #header:not(.box-header){
+     background-color: #100b3a;
+}
+.footer-logo{
+    background: #100b3a;
+}
+/*.modal{
+
+}
+    will-change visibility, opacity
+    display flex
+    align-items center
+    justify-content center
+    position fixed
+    top 0
+    left 0
+    right 0
+    bottom 0
+    overflow-y auto
+    overflow-x hidden
+    z-index $modal-z
+    // hide modal
+    visibility hidden
+    opacity 0
+    $ease()
+    transition-delay $modal-delay
+
+    &--active
+        // reveal modal
+        visibility visible
+        opacity 1
+
+    &--align-top
+        // align to top of window, useful if modal has a lot of content
+        align-items flex-start
+
+    &__bg
+        // background color can be added as a backdrop for the modal
+        background transparent
+
+    &__dialog
+        // controls the width and padding of modal
+        max-width $modal-width
+        padding ($space / 2)
+
+    &__content
+        will-change transform, opacity
+        position relative
+        padding $space
+        background $modal-bg
+        background-clip padding-box
+        box-shadow 0 12px 15px 0 rgba(black, 0.25)
+        opacity 0
+        $ease(.25s)
+
+        &--active
+            opacity 1
+
+    &__close
+        z-index $modal-z+100
+        cursor pointer
+
+    &__trigger
+        // modal trigger button
+        position relative
+        display inline-block;
+        padding ($space / 2) $space
+        color: rgba(black, 0.7)
+        line-height 1
+        cursor pointer
+        background $modal-bg
+        box-shadow 0 2px 5px 0 rgba(black, 0.26)
+        -webkit-tap-highlight-color: rgba(0,0,0,0);     user-select none
+        $ease()
+
+        &--active
+                z-index 10
+
+        &:hover
+                background mix(black, $modal-bg, 10)
+
+
+#modal__temp
+    // this is the div that expands when the button is clicked
+    will-change transform, opacity
+    position absolute
+    top 0
+    left 0
+    right 0
+    bottom 0
+    background $modal-bg
+    transform none
+    opacity 1
+    transition opacity 0.1s ease-out, transform $t cubic-bezier(0.23, 1, 0.32, 1)
+
+/**
+ * Demo specific CSS
+
+
+    .modal__trigger{
+        margin-right :3px;
+    }
+        
+        @media (max-width :640px){
+            .modal__trigger{
+                margin-bottom:3px;
+            }
+            
+        }
+
+.demo-close{
+     position:absolute; 
+     top: 0;
+     right: 0;
+     margin: 2px;
+     padding: 4px;
+     background: rgba(0,0,0,0.3);
+     border-radius: 50%;
+
+}
+   
+
+    svg
+        {width :24px;
+        fill: white;
+        pointer-events:none; 
+        vertical-align :top}
+
+    &:hover{
+        background :rgba(0,0,0,0.6);}    
+*/
